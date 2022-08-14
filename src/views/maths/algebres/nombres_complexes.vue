@@ -8,5 +8,13 @@ export default defineComponent({
 </script>
 
 <template>
-  <p>Nombres complexes</p>
+  <p>
+    Nombres complexes
+    ------------------------------------------------------------------------------------------------------------------------
+  </p>
 </template>
+<style lang="scss" scoped>
+p {
+  background: blue;
+}
+</style>

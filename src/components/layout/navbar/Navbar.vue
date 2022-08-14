@@ -4,13 +4,13 @@
     <nav>
       <ul class="menu">
         <li class="link">
-          <router-link to="/" class="nav-links">Home</router-link>
+          <a href="#" class="nav-links">Home</a>
         </li>
         <li class="link">
-          <router-link to="/projects/1">Projects</router-link>
+          <router-link to="/maths">Mathématiques</router-link>
         </li>
         <li class="link">
-          <router-link to="/about">About</router-link>
+          <router-link to="/physics">Physique</router-link>
         </li>
         <li class="link">
           <a
@@ -28,7 +28,7 @@
 <style lang="scss" scoped>
 header {
   width: 100%;
-  background: red;
+  background: #11101d;
 }
 ul {
   height: 60px;
@@ -41,6 +41,9 @@ ul {
 }
 li {
   padding-right: 15px;
+}
+a {
+  font-family: "Poppins", sans-serif;
 }
 </style>
 <script lang="ts">

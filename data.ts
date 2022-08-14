@@ -30,7 +30,7 @@ const config: Config = {
       ],
     },
     algebres: {
-      name: "Algebres",
+      name: "Algèbres",
       icon: "bx-infinite",
       chapters: [
         {
@@ -39,7 +39,7 @@ const config: Config = {
         },
         {
           name: "Trigonométrie",
-          path: "maths/algebres/nombres_complexes",
+          path: "maths/algebres/trigonometrie",
         },
       ],
     },
@@ -74,12 +74,7 @@ const config: Config = {
     general: {
       name: "Général",
       icon: "bx-atom",
-      chapters: [
-        {
-          name: "Trigonométrie",
-          path: "maths/index",
-        },
-      ],
+      chapters: [],
     },
     electricity: {
       name: "Éléctricité",

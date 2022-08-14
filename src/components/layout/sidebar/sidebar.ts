@@ -193,6 +193,9 @@ export default defineComponent({
           : this.menuClosedPaddingLeftBody;
     },
   },
+  beforeUnmount() {
+    window.document.body.style.paddingLeft = "0px"
+  },
 });
 interface MenuItem {
   link: string;
