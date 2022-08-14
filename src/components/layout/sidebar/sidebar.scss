@@ -15,7 +15,7 @@
   background: var(--bg-color);
   /* padding: 6px 14px 0 14px; */
   z-index: 99;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .sidebar.open {
   width: 280px;
@@ -28,14 +28,14 @@
 }
 .sidebar .logo-details .icon {
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .sidebar .logo-details .logo_name {
   color: var(--logo-title-color);
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .sidebar.open .logo-details .icon,
 .sidebar.open .logo-details .logo_name {
@@ -51,7 +51,7 @@
   font-size: 23px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .sidebar.open .logo-details #btn {
   text-align: right;
@@ -111,7 +111,7 @@
   width: 50px;
   border: none;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   background: var(--secondary-color);
 }
 .sidebar.open input {
@@ -164,7 +164,7 @@
 }
 .sidebar .li-style .a-style a:hover .links_name,
 .sidebar .li-style .a-style a:hover i {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   color: var(--bg-color);
 }
 
@@ -208,7 +208,7 @@
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   z-index: 2;
 }
 .sidebar.open ~ .home-section {

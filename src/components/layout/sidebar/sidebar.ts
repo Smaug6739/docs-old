@@ -26,7 +26,7 @@ export default defineComponent({
     },
     menuOpenedPaddingLeftBody: {
       type: String,
-      default: "0px",
+      default: "280px",
     },
     menuClosedPaddingLeftBody: {
       type: String,
