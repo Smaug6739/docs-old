@@ -93,53 +93,11 @@ export default defineComponent({
       type: String,
       default: "Search",
     },
-
-
-    //! Styles
-    bgColor: {
-      type: String,
-      default: "#11101d",
-    },
-    secondaryColor: {
-      type: String,
-      default: "#1d1b31",
-    },
-    homeSectionColor: {
-      type: String,
-      default: "#e4e9f7",
-    },
-    logoTitleColor: {
-      type: String,
-      default: "#fff",
-    },
-    iconsColor: {
-      type: String,
-      default: "#fff",
-    },
-    itemsTooltipColor: {
-      type: String,
-      default: "#e4e9f7",
-    },
-    searchInputTextColor: {
-      type: String,
-      default: "#fff",
-    },
-    menuItemsHoverColor: {
-      type: String,
-      default: "#fff",
-    },
-    menuItemsTextColor: {
-      type: String,
-      default: "#fff",
-    },
-    menuFooterTextColor: {
-      type: String,
-      default: "#fff",
-    },
   },
   data() {
     return {
       isOpened: false,
+      searchInput: "",
     };
   },
   mounted() {
@@ -167,6 +125,14 @@ export default defineComponent({
         })
       }
       
+      // Handle search input
+      if(this.searchInput){
+        const copy = items;
+        copy.forEach(item => {
+          item.childrens = item.childrens.filter(child => child.name.toLowerCase().includes(this.searchInput.toLowerCase()));
+        })
+        return copy.filter((item) => item.childrens.length > 0);
+      }
       return items;
     }
   },
