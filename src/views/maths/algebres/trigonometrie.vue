@@ -8,6 +8,7 @@ export default defineComponent({
 </script>
 
 <template>
+  <h1>TRIGONOMETRIE</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
     Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
