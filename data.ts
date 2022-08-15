@@ -9,7 +9,7 @@ interface ThemeObject {
 export interface Subject {
   name: string;
   url: string;
-  themes: ThemeObject;
+  data: ThemeObject;
 }
 export interface Theme {
   name: string;
@@ -25,7 +25,7 @@ const config: Config = {
   maths: {
     name: "Mathématiques",
     url: "/maths",
-    themes: {
+    data: {
       general: {
         name: "General",
         icon: "bx-math",
@@ -70,7 +70,7 @@ const config: Config = {
   physics: {
     name: "Physique",
     url: "/physics",
-    themes: {
+    data: {
       general: {
         name: "Général",
         icon: "bx-atom",
