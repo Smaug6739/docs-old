@@ -21,8 +21,8 @@ for (const subject in config) {
     children: [],
   };
   const themes = config[subject];
-  for (const theme in themes) {
-    for (const data of themes[theme].chapters) {
+  for (const theme in themes.themes) {
+    for (const data of themes.themes[theme].chapters) {
       const index = (await import(`../views/index.vue`)).default;
       const spName = data.path.split("/");
       let page: any;

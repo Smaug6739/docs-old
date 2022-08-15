@@ -1,15 +1,14 @@
 <template>
   <header class="header">
-    <div></div>
     <nav>
       <ul class="menu">
-        <li>
+        <li class="destination">
           <a href="#" class="nav-links">Home</a>
         </li>
-        <li>
+        <li class="destination">
           <router-link to="/maths">Mathématiques</router-link>
         </li>
-        <li>
+        <li class="destination">
           <router-link to="/physics">Physique</router-link>
         </li>
         <li class="icon">
@@ -48,6 +47,12 @@ li {
 
 .icon:hover {
   opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .destination {
+    display: none;
+  }
 }
 </style>
 <script lang="ts">

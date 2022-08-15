@@ -1,5 +1,5 @@
 import { defineComponent } from "vue";
-import config from "../../../../data"
+import config from "../../../../data";
 export default defineComponent({
   name: "SidebarMenu",
   props: {
@@ -33,53 +33,6 @@ export default defineComponent({
       default: "78px",
     },
 
-    //! Menu items
-    menuItems: {
-      type: Array<MenuItem>,
-      default: (): MenuItem[] => [
-        {
-          link: "#",
-          name: "Dashboard",
-          icon: "bx-grid-alt",
-        },
-        {
-          link: "#",
-          name: "User",
-          icon: "bx-user",
-        },
-        {
-          link: "#",
-          name: "Messages",
-          icon: "bx-chat",
-        },
-        {
-          link: "#",
-          name: "Analytics",
-          icon: "bx-pie-chart-alt-2",
-        },
-        {
-          link: "#",
-          name: "File Manager",
-          icon: "bx-folder",
-        },
-        {
-          link: "#",
-          name: "Order",
-          icon: "bx-cart-alt",
-        },
-        {
-          link: "#",
-          name: "Saved",
-          icon: "bx-heart",
-        },
-        {
-          link: "#",
-          name: "Setting",
-          icon: "bx-cog",
-        },
-      ],
-    },
-
     //! Search
     isSearch: {
       type: Boolean,
@@ -104,37 +57,39 @@ export default defineComponent({
     this.isOpened = this.isMenuOpen;
   },
   computed: {
-    menuItems2():MenuItem2[] {
-      const subject = this.$route.path.split('/')[1];
+    menuItems2(): MenuItem2[] {
+      const subject = this.$route.path.split("/")[1];
       const data = config[subject];
-      
-      if(!data) return [];
-      const items : MenuItem2[] = [];
-      for(const theme in data) {
-        const childrens:Children[]= [];
-        for(const child of data[theme].chapters) {
+
+      if (!data) return [];
+      const items: MenuItem2[] = [];
+      for (const theme in data.themes) {
+        const childrens: Children[] = [];
+        for (const child of data.themes[theme].chapters) {
           childrens.push({
             name: child.name,
             link: `/${child.path}`,
           });
         }
         items.push({
-          name: data[theme].name,
-          icon: data[theme].icon,
+          name: data.themes[theme].name,
+          icon: data.themes[theme].icon,
           childrens,
-        })
+        });
       }
-      
+
       // Handle search input
-      if(this.searchInput){
+      if (this.searchInput) {
         const copy = items;
-        copy.forEach(item => {
-          item.childrens = item.childrens.filter(child => child.name.toLowerCase().includes(this.searchInput.toLowerCase()));
-        })
+        copy.forEach((item) => {
+          item.childrens = item.childrens.filter((child) =>
+            child.name.toLowerCase().includes(this.searchInput.toLowerCase())
+          );
+        });
         return copy.filter((item) => item.childrens.length > 0);
       }
       return items;
-    }
+    },
   },
   watch: {
     isOpened() {
@@ -145,14 +100,22 @@ export default defineComponent({
           : this.menuClosedPaddingLeftBody;
     },
   },
+  methods: {
+    getSubjects(): Subject[] {
+      const arr: Subject[] = [];
+      for (const subject in config) {
+        arr.push(config[subject]);
+      }
+      return arr;
+    },
+  },
   beforeUnmount() {
-    window.document.body.style.paddingLeft = "0px"
+    window.document.body.style.paddingLeft = "0px";
   },
 });
-interface MenuItem {
-  link: string;
+interface Subject {
   name: string;
-  icon: string;
+  url: string;
 }
 interface MenuItem2 {
   name: string;
