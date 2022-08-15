@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <div class="sidebar" :class="isOpened ? 'open' : ''" :style="cssVars">
+    <div class="sidebar" :class="isOpened ? 'open' : ''">
       <div class="logo-details" style="margin: 6px 14px 0 14px">
         <img
           v-if="menuLogo"

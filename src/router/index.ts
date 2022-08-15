@@ -1,4 +1,3 @@
-import type { DefineComponent } from "vue";
 import {
   createRouter,
   createWebHistory,

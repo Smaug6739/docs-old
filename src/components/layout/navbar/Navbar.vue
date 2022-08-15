@@ -13,12 +13,7 @@
           <router-link to="/physics">Physique</router-link>
         </li>
         <li class="link">
-          <a
-            href="https://github.com/Smaug6739"
-            target="__blank"
-            class="nav-links"
-            >Github</a
-          >
+          <span @click="toggleTheme">Toggle theme</span>
         </li>
       </ul>
     </nav>
@@ -27,6 +22,7 @@
 
 <style lang="scss" scoped>
 header {
+  position: relative;
   width: 100%;
   background: #11101d;
 }
@@ -51,5 +47,14 @@ import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
   name: "Navbar",
+  methods: {
+    toggleTheme() {
+      if (document.documentElement.getAttribute("data-theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    },
+  },
 });
 </script>

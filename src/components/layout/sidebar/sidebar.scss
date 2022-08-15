@@ -31,7 +31,7 @@
   transition: all 0.2s ease;
 }
 .sidebar .logo-details .logo_name {
-  color: var(--logo-title-color);
+  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
@@ -57,7 +57,7 @@
   text-align: right;
 }
 .sidebar i {
-  color: var(--icons-color);
+  color: var(--font-color);
   height: 60px;
   min-width: 50px;
   font-size: 28px;
@@ -80,7 +80,7 @@
   top: -20px;
   left: calc(100% + 15px);
   z-index: 3;
-  background: var(--items-tooltip-color);
+  background: var(--font-color-dimmed);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-radius: 4px;
@@ -103,7 +103,7 @@
 }
 .sidebar input {
   font-size: 15px;
-  color: var(--serach-input-text-color);
+  color: var(--font-color);
   font-weight: 400;
   outline: none;
   height: 50px;
@@ -112,7 +112,7 @@
   border: none;
   border-radius: 12px;
   transition: all 0.2s ease;
-  background: var(--secondary-color);
+  background: var(--bg-color-dimmed);
 }
 .sidebar.open input {
   padding: 0 20px 0 50px;
@@ -124,15 +124,15 @@
   left: 0;
   transform: translateY(-50%);
   font-size: 22px;
-  background: var(--secondary-color);
-  color: var(--icons-color);
+  background: var(--bg-color-dimmed);
+  color: var(--font-color);
 }
 .sidebar.open .bx-search:hover {
-  background: var(--secondary-color);
-  color: var(--icons-color);
+  background: var(--bg-color-dimmed);
+  color: var(--font-color);
 }
 .sidebar .bx-search:hover {
-  background: var(--menu-items-hover-color);
+  background: var(--font-color);
   color: var(--bg-color);
 }
 .sidebar .li-style .a-style a {
@@ -147,10 +147,10 @@
 }
 
 .sidebar .li-style .a-style a:hover {
-  background: var(--menu-items-hover-color);
+  background: var(--font-color);
 }
 .sidebar .li-style .links_name {
-  color: var(--menu-items-text-color);
+  color: var(--font-color);
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -195,7 +195,7 @@
 
 .home-section {
   position: relative;
-  background: var(--home-section-color);
+  background: var(--font-color-dimmed);
   min-height: 100vh;
   top: 0;
   left: 78px;

@@ -146,21 +146,6 @@ export default defineComponent({
     this.isOpened = this.isMenuOpen;
   },
   computed: {
-    cssVars() {
-      return {
-        // '--padding-left-body': this.isOpened ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody,
-        "--bg-color": this.bgColor,
-        "--secondary-color": this.secondaryColor,
-        "--home-section-color": this.homeSectionColor,
-        "--logo-title-color": this.logoTitleColor,
-        "--icons-color": this.iconsColor,
-        "--items-tooltip-color": this.itemsTooltipColor,
-        "--serach-input-text-color": this.searchInputTextColor,
-        "--menu-items-hover-color": this.menuItemsHoverColor,
-        "--menu-items-text-color": this.menuItemsTextColor,
-        "--menu-footer-text-color": this.menuFooterTextColor,
-      };
-    },
     menuItems2():MenuItem2[] {
       const subject = this.$route.path.split('/')[1];
       const data = config[subject];
