@@ -172,6 +172,7 @@ export default defineComponent({
   },
   watch: {
     isOpened() {
+      window.document.body.style.transition = "all 0.3s ease";
       window.document.body.style.paddingLeft =
         this.isOpened && this.isPaddingLeft
           ? this.menuOpenedPaddingLeftBody

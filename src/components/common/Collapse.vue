@@ -8,7 +8,7 @@
 </template>
 <style lang="scss" scoped>
 .collapsible {
-  background-color: #eee;
+  background-color: var(-bg-color-dimmed);
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -22,7 +22,7 @@
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
-  background-color: #ccc;
+  background-color: var(--bg-color-dimmed);
 }
 
 /* Style the collapsible content. Note: hidden by default */

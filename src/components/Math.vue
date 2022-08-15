@@ -24,6 +24,7 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 @import "https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css";
+
 .math {
   font-size: 30px;
 }
