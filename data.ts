@@ -22,12 +22,7 @@ const config: Config = {
     general: {
       name: "General",
       icon: "bx-math",
-      chapters: [
-        {
-          name: "Symboles",
-          path: "physics/index",
-        },
-      ],
+      chapters: [],
     },
     algebres: {
       name: "Algèbres",

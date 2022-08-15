@@ -17,13 +17,13 @@ for (const subject in config) {
   const subjectPush: RouteRecordRaw = {
     path: `/${subject}`,
     name: subject,
-    component: () => import(`../views/${subject}/index.vue`),
+    component: () => import(`../views/index.vue`),
     children: [],
   };
   const themes = config[subject];
   for (const theme in themes) {
     for (const data of themes[theme].chapters) {
-      const index = (await import(`../views/${subject}/index.vue`)).default;
+      const index = (await import(`../views/index.vue`)).default;
       const spName = data.path.split("/");
       let page: any;
       if (spName.length === 1)
