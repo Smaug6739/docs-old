@@ -2,6 +2,7 @@
   width: 30px;
   margin: 0 10px 0 10px;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -12,24 +13,28 @@
   min-height: min-content;
   /* overflow-y: auto; */
   width: 78px;
-  background: var(--bg-color);
+  background: var(--bg-color-1);
   /* padding: 6px 14px 0 14px; */
   z-index: 99;
   transition: all 0.2s ease;
 }
+
 .sidebar.open {
   width: 280px;
 }
+
 .sidebar .logo-details {
   height: 60px;
   display: flex;
   align-items: center;
   position: relative;
 }
+
 .sidebar .logo-details .icon {
   opacity: 0;
   transition: all 0.2s ease;
 }
+
 .sidebar .logo-details .logo_name {
   color: var(--font-color);
   font-size: 20px;
@@ -37,10 +42,12 @@
   opacity: 0;
   transition: all 0.2s ease;
 }
+
 .sidebar.open .logo-details .icon,
 .sidebar.open .logo-details .logo_name {
   opacity: 1;
 }
+
 .sidebar .logo-details #btn {
   position: absolute;
   top: 50%;
@@ -53,9 +60,11 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .sidebar.open .logo-details #btn {
   text-align: right;
 }
+
 .sidebar i {
   color: var(--font-color);
   height: 60px;
@@ -64,17 +73,20 @@
   text-align: center;
   line-height: 60px;
 }
+
 .sidebar .nav-list {
   margin-top: 20px;
   /* margin-bottom: 60px; */
   /* height: 100%; */
   /* min-height: min-content; */
 }
+
 .sidebar .li-style {
   position: relative;
   margin: 8px 0;
   list-style: none;
 }
+
 .sidebar .li-style .tooltip {
   position: absolute;
   top: -20px;
@@ -91,6 +103,7 @@
   pointer-events: none;
   transition: 0s;
 }
+
 .sidebar li:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
@@ -98,9 +111,11 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .sidebar.open .li-style .tooltip {
   display: none;
 }
+
 .sidebar input {
   font-size: 15px;
   color: var(--font-color);
@@ -112,29 +127,34 @@
   border: none;
   border-radius: 12px;
   transition: all 0.2s ease;
-  background: var(--bg-color-dimmed);
+  background: var(--contrast-color);
 }
+
 .sidebar.open input {
   padding: 0 20px 0 50px;
   width: 100%;
 }
+
 .sidebar .bx-search {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   font-size: 22px;
-  background: var(--bg-color-dimmed);
+  background: var(--contrast-color);
   color: var(--font-color);
 }
+
 .sidebar.open .bx-search:hover {
-  background: var(--bg-color-dimmed);
+  background: var(--contrast-color);
   color: var(--font-color);
 }
+
 .sidebar .bx-search:hover {
   background: var(--font-color);
-  color: var(--bg-color);
+  color: var(--bg-color-1);
 }
+
 .sidebar .li-style .a-style a {
   display: flex;
   height: 100%;
@@ -143,12 +163,13 @@
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  background: var(--bg-color);
+  background: var(--bg-color-1);
 }
 
 .sidebar .li-style .a-style a:hover {
   background: var(--font-color);
 }
+
 .sidebar .li-style .links_name {
   color: var(--font-color);
   font-size: 15px;
@@ -158,14 +179,16 @@
   pointer-events: none;
   transition: 0.4s;
 }
+
 .sidebar.open .li-style .a-style a .links_name {
   opacity: 1;
   pointer-events: auto;
 }
+
 .sidebar .li-style .a-style a:hover .links_name,
 .sidebar .li-style .a-style a:hover i {
   transition: all 0.2s ease;
-  color: var(--bg-color);
+  color: var(--bg-color-1);
 }
 
 .children {
@@ -178,6 +201,7 @@
 .sub_link {
   margin-left: 40px;
 }
+
 .sidebar .li-style i {
   height: 50px;
   line-height: 50px;
@@ -203,30 +227,36 @@
   transition: all 0.2s ease;
   z-index: 2;
 }
-.sidebar.open ~ .home-section {
+
+.sidebar.open~.home-section {
   left: 280px;
   width: calc(100% - 280px);
 }
+
 .home-section .text {
   display: inline-block;
-  color: var(--bg-color);
+  color: var(--bg-color-1);
   font-size: 25px;
   font-weight: 500;
   margin: 18px;
 }
+
 .my-scroll-active {
   overflow-y: auto;
 }
+
 #my-scroll {
   overflow-y: auto;
   height: calc(100% - 60px);
 }
+
 #my-scroll::-webkit-scrollbar {
   display: none;
   /* background-color: rgba(255, 255, 255, 0.2); 
     width: 10px;
     border-radius:5px  */
 }
+
 /* #my-scroll::-webkit-scrollbar-thumb{
     background-color: red;
     border-radius:5px 

@@ -1,37 +1,62 @@
 <template>
-  <button type="button" class="collapsible" @click="toggle">
-    Open Collapsible
-  </button>
-  <div class="content">
-    <p>Lorem ipsum...</p>
+  <div class="container" @click="toggle" ref="element">
+    <span class="collapsible">
+      <i class='bx bxs-right-arrow'></i>Open Collapsible
+    </span>
+    <div class="content" ref="content">
+      <hr />
+      <p>Lorem ipsum...</p>
+    </div>
   </div>
+
 </template>
 <style lang="scss" scoped>
-.collapsible {
-  background-color: var(-bg-color-dimmed);
-  color: #444;
+.container {
   cursor: pointer;
-  padding: 18px;
+  background-color: var(--contrast-color);
   width: 100%;
-  border: none;
+  padding: 18px;
+  border-radius: 12px;
+
+  i {
+    transition: 0.2s;
+    /* Transition duration */
+  }
+
+
+}
+
+.active {
+  i {
+    transform: rotate(90deg);
+  }
+}
+
+.collapsible {
+  color: var(--font-color-dimmed);
+  background-color: var(--contrast-color);
+  width: 100%;
   text-align: left;
   outline: none;
   font-size: 15px;
+  border: none;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.collapsible:hover {
-  background-color: var(--bg-color-dimmed);
-}
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
-  background-color: white;
+  margin: 2px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+
+  hr {
+    margin-top: 5px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
 }
 </style>
 <script lang="ts">
@@ -42,9 +67,9 @@ export default defineComponent({
   name: "Collapse",
   methods: {
     toggle(event: MouseEvent) {
-      const element: HTMLElement = event.target as HTMLElement;
+      const element: HTMLElement = this.$refs.element as HTMLElement;
       element.classList.toggle("active");
-      var content = element.nextElementSibling as HTMLElement;
+      var content = this.$refs.content as HTMLElement;
       if (content.style.maxHeight) {
         content.style.maxHeight = "";
       } else {

@@ -10,20 +10,28 @@ $green: #28a745;
 $black: #000000;
 
 :root {
-  --bg-color: #11101d;
-  --bg-color-dimmed: #1d1b31;
+  --bg-color-1: #11101d;
+  --contrast-color: #322f55;
+  --contrast-color-after: #1d1b31;
+  --bg-color-2: #242424;
   --font-color: #fff;
   --font-color-dimmed: #e4e9f7;
 }
+
 [data-theme="dark"] {
-  --bg-color: #11101d;
-  --bg-color-dimmed: #1d1b31;
+  --bg-color-1: #11101d;
+  --contrast-color: #322f55;
+  --contrast-color-after: #1d1b31;
+  --bg-color-2: #242424;
   --font-color: #fff;
   --font-color-dimmed: #e4e9f7;
 }
+
 [data-theme="light"] {
-  --bg-color: #fff;
-  --bg-color-dimmed: #e4e9f7;
+  --bg-color-1: #fff;
+  --contrast-color: #e4e9f7;
+  --contrast-color-after: #c8cedf;
+  --bg-color-2: #f0f0f0;
   --font-color: #11101d;
   --font-color-dimmed: #1d1b31;
 }

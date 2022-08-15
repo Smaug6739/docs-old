@@ -24,8 +24,9 @@
 header {
   position: relative;
   width: 100%;
-  background: #11101d;
+  background: var(--bg-color-1);
 }
+
 ul {
   height: 60px;
 
@@ -35,9 +36,11 @@ ul {
   justify-content: end;
   list-style: none;
 }
+
 li {
   padding-right: 15px;
 }
+
 a {
   font-family: "Poppins", sans-serif;
 }
