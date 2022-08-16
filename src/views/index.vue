@@ -11,31 +11,12 @@
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
+	padding: 10px;
 
 	a {
 		color: $pink;
-		opacity: 0.8;
-		text-decoration: none;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 
-	a.absent {
-		color: #cc0000;
-	}
-
-	a.anchor {
-		display: block;
-		padding-left: 30px;
-		margin-left: -30px;
-		cursor: pointer;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-	}
 
 	h1,
 	h2,
