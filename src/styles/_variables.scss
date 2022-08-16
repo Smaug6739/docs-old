@@ -12,20 +12,22 @@ $black: #000000;
 
 :root {
   --bg-color-1: #11101d;
-  --contrast-color: #322f55;
+  --contrast-color: #423e6b;
   --contrast-color-after: #1d1b31;
   --bg-color-2: #242424;
   --font-color: #fff;
   --font-color-dimmed: #c8cedf;
+  --opposite-color: #fff;
 }
 
 [data-theme="dark"] {
   --bg-color-1: #11101d;
-  --contrast-color: #322f55;
+  --contrast-color: #423e6b;
   --contrast-color-after: #1d1b31;
   --bg-color-2: #242424;
   --font-color: #fff;
   --font-color-dimmed: #c8cedf;
+  --opposite-color: #fff;
 }
 
 [data-theme="light"] {
@@ -35,4 +37,5 @@ $black: #000000;
   --bg-color-2: #e9eaec;
   --font-color: #242424;
   --font-color-dimmed: #000;
+  --opposite-color: #000;
 }
