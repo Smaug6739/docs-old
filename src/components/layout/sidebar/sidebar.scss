@@ -40,7 +40,6 @@
 }
 
 .sidebar .logo-details .logo_name {
-  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
@@ -70,7 +69,6 @@
 }
 
 .sidebar i {
-  color: var(--font-color);
   height: 60px;
   min-width: 50px;
   font-size: 28px;
@@ -146,12 +144,10 @@
   transform: translateY(-50%);
   font-size: 22px;
   background: var(--contrast-color);
-  color: var(--font-color);
 }
 
 .sidebar.open .bx-search:hover {
   background: var(--contrast-color);
-  color: var(--font-color);
 }
 
 .sidebar .bx-search:hover {

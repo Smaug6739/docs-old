@@ -41,7 +41,6 @@ nav {
   .title {
     display: flex;
     align-items: center;
-    color: var(--font-color);
     height: 60px;
     min-width: 50px;
     font-size: 20px;
