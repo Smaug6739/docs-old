@@ -1,15 +1,9 @@
 // SUBJECT => THEME => CHAPTER
 
-export interface Config {
-  [key: string]: Subject;
-}
-interface ThemeObject {
-  [key: string]: Theme;
-}
 export interface Subject {
   name: string;
   url: string;
-  data: ThemeObject;
+  themes: Theme[];
 }
 export interface Theme {
   name: string;
@@ -21,17 +15,17 @@ export interface Chapter {
   name: string;
   path: string;
 }
-const config: Config = {
-  maths: {
+const config: Subject[] = [
+  {
     name: "Mathématiques",
     url: "/maths",
-    data: {
-      general: {
+    themes: [
+      {
         name: "General",
         icon: "bx-math",
         chapters: [],
       },
-      algebres: {
+      {
         name: "Algèbres",
         icon: "bx-infinite",
         chapters: [
@@ -45,44 +39,44 @@ const config: Config = {
           },
         ],
       },
-      analyse: {
+      {
         name: "Analyse",
         icon: "bx-analyse",
         chapters: [],
       },
-      geometrie: {
+      {
         name: "Géométrie",
         icon: "bxs-shapes",
         chapters: [],
       },
-      probabilitesEtStatistiques: {
+      {
         name: "Probabilités et statistiques",
         icon: "bx-pie-chart-alt-2",
         chapters: [],
       },
-      algorithmique: {
+      {
         name: "Algorithme",
         icon: "bx-code-alt",
         chapters: [],
       },
-    },
+    ],
   },
-  physics: {
+  {
     name: "Physique",
     url: "/physics",
-    data: {
-      general: {
+    themes: [
+      {
         name: "Général",
         icon: "bx-atom",
         chapters: [],
       },
-      electricity: {
+      {
         name: "Éléctricité",
         icon: "bx-candles",
         chapters: [],
       },
-    },
+    ],
   },
-};
+];
 
 export default config;

@@ -13,18 +13,18 @@ const routes: RouteRecordRaw[] = [
 ];
 
 import config from "../../data";
-for (const subject in config) {
+for (const subject of config) {
   const subjectPush: RouteRecordRaw = {
-    path: `/${subject}`,
-    name: subject,
+    path: subject.url,
+    name: subject.name,
     component: () => import(`../views/index.vue`),
     children: [],
   };
-  const themes = config[subject];
-  for (const theme in themes.data) {
-    for (const data of themes.data[theme].chapters) {
+  const themes = subject;
+  for (const theme of themes.themes) {
+    for (const chapter of theme.chapters) {
       const index = (await import(`../views/index.vue`)).default;
-      const spName = data.path.split("/");
+      const spName = chapter.path.split("/");
       let page: any;
       if (spName.length === 1)
         page = (await import(`../views/${spName[0]}.vue`)).default;
@@ -38,8 +38,8 @@ for (const subject in config) {
         ).default;
 
       subjectPush.children.push({
-        path: `/${data.path}`,
-        name: data.name,
+        path: `/${chapter.path}`,
+        name: chapter.name,
         components: {
           default: index,
           Content: page,
@@ -49,7 +49,6 @@ for (const subject in config) {
   }
   routes.push(subjectPush);
 }
-console.log(routes);
 
 const router = createRouter({
   history: createWebHistory(),

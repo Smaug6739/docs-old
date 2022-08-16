@@ -58,22 +58,21 @@ export default defineComponent({
   },
   computed: {
     menuItems2(): MenuItem2[] {
-      const subjectName = this.$route.path.split("/")[1];
-      const subject = config[subjectName];
+      const subject = config.find((s) => this.$route.path.startsWith(s.url));
 
       if (!subject) return [];
       const items: MenuItem2[] = [];
-      for (const theme in subject.data) {
+      for (const theme of subject.themes) {
         const childrens: Children[] = [];
-        for (const child of subject.data[theme].chapters) {
+        for (const child of theme.chapters) {
           childrens.push({
             name: child.name,
             link: `/${child.path}`,
           });
         }
         items.push({
-          name: subject.data[theme].name,
-          icon: subject.data[theme].icon,
+          name: theme.name,
+          icon: theme.icon,
           childrens,
         });
       }
