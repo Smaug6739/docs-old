@@ -54,7 +54,7 @@
                 <span class="tooltip">{{ menuItem.name }}</span>
                 <ul v-if="isOpened">
                   <span v-for="(children, index) of menuItem.childrens" :key="index">
-                    <li class="children">
+                    <li class="children" @click="close">
                       <router-link :to="children.link" class="sub_link">{{
                           children.name
                       }}</router-link>

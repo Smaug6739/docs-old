@@ -89,6 +89,14 @@ export default defineComponent({
       }
       return items;
     },
+    close(): undefined {
+      console.log("close");
+
+      if (window.screen.width < 768) {
+        this.isOpened = !this.isOpened;
+      }
+      return;
+    },
   },
   watch: {
     isOpened() {
