@@ -1,5 +1,5 @@
 <template>
-  <p v-html="mathRender" class="math"></p>
+  <span v-html="mathRender" class="math"></span>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -8,14 +8,14 @@ export default defineComponent({
   name: "Math",
   components: {},
   props: {
-    math: {
+    src: {
       type: String,
       required: true,
     },
   },
   computed: {
     mathRender(): string {
-      return katex.renderToString(this.math, {
+      return katex.renderToString(this.src, {
         throwOnError: false,
       });
     },
@@ -26,6 +26,6 @@ export default defineComponent({
 @import "https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css";
 
 .math {
-  font-size: 30px;
+  font-size: 20px;
 }
 </style>
