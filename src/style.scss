@@ -27,10 +27,10 @@
 
 a {
   font-family: "Poppins", sans-serif;
-  color: #b9b8b8;
+  color: var(--font-color);
   text-decoration: none;
 
   &:hover {
-    color: #ffffff;
+    color: $pink;
   }
 }
