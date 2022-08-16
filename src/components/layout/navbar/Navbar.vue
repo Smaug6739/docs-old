@@ -29,6 +29,10 @@ header {
   background: var(--bg-color-1);
 }
 
+a {
+  font-weight: 600;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -74,6 +78,7 @@ li {
 
 .icon:hover {
   opacity: 1;
+  color: $pink;
 }
 
 @media (max-width: 720px) {

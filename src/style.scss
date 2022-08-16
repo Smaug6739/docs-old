@@ -25,12 +25,14 @@
 }
 
 a {
+  opacity: 0.9;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--font-color);
   text-decoration: none;
 
   &:hover {
+    opacity: 1;
     color: $pink;
     text-decoration: underline;
   }
