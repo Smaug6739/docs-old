@@ -78,7 +78,7 @@ li {
 
 .icon:hover {
   opacity: 1;
-  color: $pink;
+  color: $pink
 }
 
 @media (max-width: 720px) {
