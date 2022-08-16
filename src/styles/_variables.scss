@@ -1,12 +1,13 @@
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
-$pink: #df0b63;
+$pink: #E0115F;
 $red: #dc3545;
 $white: white;
 $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #28a745;
+$grey: #869099;
 $black: #000000;
 
 :root {
@@ -32,6 +33,6 @@ $black: #000000;
   --contrast-color: #e4e9f7;
   --contrast-color-after: #c8cedf;
   --bg-color-2: #e9eaec;
-  --font-color: #11101d;
-  --font-color-dimmed: #1d1b31;
+  --font-color: #242424;
+  --font-color-dimmed: #000;
 }

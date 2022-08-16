@@ -25,7 +25,7 @@
             <ul class="menu nav-list" style="overflow: visible">
               <li v-for="subject of getSubjects()" :key="subject.url" class="li-style">
                 <span class="a-style">
-                  <router-link :to="subject.url" class="a-block-style">
+                  <router-link :to="subject.url" class="a-block-style ">
                     <i class="bx" :class="'bx-square-rounded'" />
                     <span class="links_name">{{ subject.name }}</span>
                   </router-link>

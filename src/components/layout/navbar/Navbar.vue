@@ -1,7 +1,11 @@
 <template>
   <header class="header">
     <nav>
-      <ul class="menu">
+      <p class="title" style="margin: 6px 14px 0 14px">
+        Scientia
+      </p>
+
+      <ul>
         <li class="destination">
           <a href="#" class="nav-links">Home</a>
         </li>
@@ -23,6 +27,29 @@
 header {
   width: 100%;
   background: var(--bg-color-1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+    height: 60px;
+    min-width: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+    i {
+      font-size: 28px;
+      line-height: 60px;
+    }
+  }
+
 }
 
 ul {
@@ -53,6 +80,7 @@ li {
   .destination {
     display: none;
   }
+
 }
 </style>
 <script lang="ts">

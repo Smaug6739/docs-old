@@ -27,10 +27,22 @@
 
 a {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: var(--font-color);
   text-decoration: none;
 
   &:hover {
     color: $pink;
+    text-decoration: underline;
   }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $grey;
+  border-radius: 9px;
 }
