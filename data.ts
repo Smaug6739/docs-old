@@ -23,7 +23,12 @@ const config: Subject[] = [
       {
         name: "General",
         icon: "bx-math",
-        chapters: [],
+        chapters: [
+          {
+            name: "Symboles",
+            path: "maths/general/symbols",
+          },
+        ],
       },
       {
         name: "Algèbres",
