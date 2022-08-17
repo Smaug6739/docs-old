@@ -26,6 +26,6 @@ export default defineComponent({
 @import "https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css";
 
 .math {
-  font-size: 20px;
+  font-size: var(--math-size);
 }
 </style>

@@ -18,6 +18,10 @@ $black: #000000;
   --font-color: #fff;
   --font-color-dimmed: #c8cedf;
   --opposite-color: #fff;
+
+  --font-size: 16px;
+  --math-size: 20px;
+  --line-height: 24px;
 }
 
 [data-theme="dark"] {
@@ -38,4 +42,11 @@ $black: #000000;
   --font-color: #242424;
   --font-color-dimmed: #000;
   --opposite-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size: 14px;
+    --math-size: 18px;
+  }
 }

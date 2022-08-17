@@ -13,62 +13,98 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\triangleq" />
 						</td>
-						<td data-label="Signification">Égaux par définition</td>
-						<td data-label="Exemple"></td>
+						<td>Égaux par définition</td>
+						<td></td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\equiv" />
 						</td>
-						<td data-label="Signification">Équivalent</td>
-						<td data-label="Exemple">
+						<td>Équivalent</td>
+						<td>
 							<MathRender src="a + b \equiv b + a" />
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\propto" />
 						</td>
-						<td data-label="Signification">Proportionnel</td>
-						<td data-label="Exemple"></td>
+						<td>Proportionnel</td>
+						<td></td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\lfloor \rfloor" />
 						</td>
-						<td data-label="Signification">Arrondi inférieur</td>
-						<td data-label="Exemple">
+						<td>Arrondi inférieur</td>
+						<td>
 							<MathRender src="\lfloor \pi \rfloor = 3" />
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\lceil \rceil" />
 						</td>
-						<td data-label="Signification">Arrondi supérieur</td>
-						<td data-label="Exemple">
+						<td>Arrondi supérieur</td>
+						<td>
 							<MathRender src="\lceil \pi \rceil = 4" />
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\forall" />
 						</td>
-						<td data-label="Signification">Pour tout/tous</td>
-						<td data-label="Exemple">
-							<MathRender src="\forall x \in \mathrm{R}" />
+						<td>Pour tout/tous</td>
+						<td>
+							<MathRender src="\forall x \in \mathbb{R}" />
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Symbole">
+						<td>
 							<MathRender src="\exists" />
 						</td>
-						<td data-label="Signification">Il existe</td>
-						<td data-label="Exemple">
-							<MathRender src="\forall x \in \mathrm{N}, \exists y = x + 1" />
+						<td>Il existe</td>
+						<td>
+							<MathRender src="\forall x \in \mathbb{N}, \exists y = x + 1" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<MathRender src="\subseteq" />
+						</td>
+						<td>Inclusion</td>
+						<td>
+							<MathRender src="\mathbb{N} \subseteq \mathbb{R}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<MathRender src="\nsubseteq" />
+						</td>
+						<td>Négation de l'inclusion</td>
+						<td>
+							<MathRender src="\mathbb{R} \nsubseteq \mathbb{N}" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<MathRender src="\in" />
+						</td>
+						<td>Appartenance</td>
+						<td>
+							<MathRender src="5 \in E" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<MathRender src="\notin" />
+						</td>
+						<td>Négation de l'appartenance</td>
+						<td>
+							<MathRender src="5 \notin E" />
 						</td>
 					</tr>
 				</tbody>

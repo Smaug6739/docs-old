@@ -4,6 +4,11 @@
 	margin: auto;
 	padding: 10px;
 
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+
 	.overflow {
 		overflow: auto;
 	}
@@ -557,7 +562,12 @@ table th {
 }*/
 table {
 	border-collapse: collapse;
-	overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+	table {
+		zoom: 0.9;
+	}
 }
 
 td,
