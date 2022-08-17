@@ -14,97 +14,97 @@
 				<tbody>
 					<tr>
 						<td>
-							<MathRender src="\triangleq" />
+							<MathRender size="math-size" src="\triangleq" />
 						</td>
 						<td>Égaux par définition</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\equiv" />
+							<MathRender size="math-size" src="\equiv" />
 						</td>
 						<td>Équivalent</td>
 						<td>
-							<MathRender src="a + b \equiv b + a" />
+							<MathRender size="math-size" src="a + b \equiv b + a" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\propto" />
+							<MathRender size="math-size" src="\propto" />
 						</td>
 						<td>Proportionnel</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\lfloor \rfloor" />
+							<MathRender size="math-size" src="\lfloor \rfloor" />
 						</td>
 						<td>Arrondi inférieur</td>
 						<td>
-							<MathRender src="\lfloor \pi \rfloor = 3" />
+							<MathRender size="math-size" src="\lfloor \pi \rfloor = 3" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\lceil \rceil" />
+							<MathRender size="math-size" src="\lceil \rceil" />
 						</td>
 						<td>Arrondi supérieur</td>
 						<td>
-							<MathRender src="\lceil \pi \rceil = 4" />
+							<MathRender size="math-size" src="\lceil \pi \rceil = 4" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\forall" />
+							<MathRender size="math-size" src="\forall" />
 						</td>
 						<td>Pour tout/tous</td>
 						<td>
-							<MathRender src="\forall x \in \mathbb{R}" />
+							<MathRender size="math-size" src="\forall x \in \mathbb{R}" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\exists" />
+							<MathRender size="math-size" src="\exists" />
 						</td>
 						<td>Il existe</td>
 						<td>
-							<MathRender src="\forall x \in \mathbb{N}, \exists y = x + 1" />
+							<MathRender size="math-size" src="\forall x \in \mathbb{N}, \exists y = x + 1" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\subseteq" />
+							<MathRender size="math-size" src="\subseteq" />
 						</td>
 						<td>Inclusion</td>
 						<td>
-							<MathRender src="\mathbb{N} \subseteq \mathbb{R}" />
+							<MathRender size="math-size" src="\mathbb{N} \subseteq \mathbb{R}" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\nsubseteq" />
+							<MathRender size="math-size" src="\nsubseteq" />
 						</td>
 						<td>Négation de l'inclusion</td>
 						<td>
-							<MathRender src="\mathbb{R} \nsubseteq \mathbb{N}" />
+							<MathRender size="math-size" src="\mathbb{R} \nsubseteq \mathbb{N}" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\in" />
+							<MathRender size="math-size" src="\in" />
 						</td>
 						<td>Appartenance</td>
 						<td>
-							<MathRender src="5 \in E" />
+							<MathRender size="math-size" src="5 \in E" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\notin" />
+							<MathRender size="math-size" src="\notin" />
 						</td>
 						<td>Négation de l'appartenance</td>
 						<td>
-							<MathRender src="5 \notin E" />
+							<MathRender size="math-size" src="5 \notin E" />
 						</td>
 					</tr>
 				</tbody>

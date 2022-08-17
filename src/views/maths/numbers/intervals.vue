@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<h1>Les intervales sur
-			<MathRender src="\mathbb{R}" />
+			<MathRender size="math-size" src="\mathbb{R}" />
 		</h1>
 		<p>
 			Les intervales sont des ensemble de nombres qui sont construits par les bornes de l'intervalle.
@@ -19,37 +19,37 @@
 				<tbody>
 					<tr>
 						<td>
-							<MathRender src="\lbrack a;b\rbrack" />
+							<MathRender size="math-size" src="\lbrack a;b\rbrack" />
 						</td>
 						<td>
-							<MathRender src="a \leq \mathit{x} \leq b" />
+							<MathRender size="math-size" src="a \leq \mathit{x} \leq b" />
 						</td>
 						<td>Le nombre x est compris entre a et b inclus.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\lbrack a;b\lbrack" />
+							<MathRender size="math-size" src="\lbrack a;b\lbrack" />
 						</td>
 						<td>
-							<MathRender src="a \leq \mathit{x} < b" />
+							<MathRender size="math-size" src="a \leq \mathit{x} < b" />
 						</td>
 						<td>Le nombre x est compris entre a inclus et b exclus.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\rbrack a;b\rbrack" />
+							<MathRender size="math-size" src="\rbrack a;b\rbrack" />
 						</td>
 						<td>
-							<MathRender src="a < \mathit{x} \leq b" />
+							<MathRender size="math-size" src="a < \mathit{x} \leq b" />
 						</td>
 						<td>Le nombre x est compris entre a exclus et b inclus.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\rbrack a;b\lbrack" />
+							<MathRender size="math-size" src="\rbrack a;b\lbrack" />
 						</td>
 						<td>
-							<MathRender src="a < \mathit{x} < b" />
+							<MathRender size="math-size" src="a < \mathit{x} < b" />
 						</td>
 						<td>Le nombre x est compris entre a et b exclus.</td>
 					</tr>
@@ -69,37 +69,37 @@
 				<tbody>
 					<tr>
 						<td>
-							<MathRender src="\lbrack a;+\infin \rbrack" />
+							<MathRender size="math-size" src="\lbrack a;+\infin \rbrack" />
 						</td>
 						<td>
-							<MathRender src="\mathit{x} \geq a" />
+							<MathRender size="math-size" src="\mathit{x} \geq a" />
 						</td>
 						<td>Le nombre x est supérieur ou égale à a.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\lbrack a;+\infin \lbrack" />
+							<MathRender size="math-size" src="\lbrack a;+\infin \lbrack" />
 						</td>
 						<td>
-							<MathRender src="a \leq \mathit{x} < b" />
+							<MathRender size="math-size" src="a \leq \mathit{x} < b" />
 						</td>
 						<td>Le nombre x est supérieur à a.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\rbrack -\infin;a\rbrack" />
+							<MathRender size="math-size" src="\rbrack -\infin;a\rbrack" />
 						</td>
 						<td>
-							<MathRender src="a \leq \mathit{x}" />
+							<MathRender size="math-size" src="a \leq \mathit{x}" />
 						</td>
 						<td>Le nombre x est inférieur ou égale à a.</td>
 					</tr>
 					<tr>
 						<td>
-							<MathRender src="\rbrack -\infin;b\lbrack" />
+							<MathRender size="math-size" src="\rbrack -\infin;b\lbrack" />
 						</td>
 						<td>
-							<MathRender src="\mathit{x} < a" />
+							<MathRender size="math-size" src="\mathit{x} < a" />
 						</td>
 						<td>Le nombre x est inférieur à a.</td>
 					</tr>

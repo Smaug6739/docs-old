@@ -52,16 +52,17 @@ const config: Subject[] = [
                         name: "Nombres complexes",
                         path: "maths/algebres/nombres_complexes",
                     },
-                    {
-                        name: "Trigonométrie",
-                        path: "maths/algebres/trigonometrie",
-                    },
                 ],
             },
             {
                 name: "Analyse",
                 icon: "bx-analyse",
-                chapters: [],
+                chapters: [
+                    {
+                        name: "Trigonométrie",
+                        path: "maths/analyze/trigonometrie",
+                    },
+                ],
             },
             {
                 name: "Géométrie",

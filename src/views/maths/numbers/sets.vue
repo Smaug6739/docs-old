@@ -19,14 +19,14 @@
 						<td>Entiers naturels</td>
 						<td>Nombre entier, positif ou nul.</td>
 						<td>
-							<MathRender src="\mathbb{N}" />
+							<MathRender size="math-size" src="\mathbb{N}" />
 						</td>
 					</tr>
 					<tr>
 						<td>Entiers relatifs</td>
 						<td>Formé de tous les entiers naturels et leuurs opposés.</td>
 						<td>
-							<MathRender src="\mathbb{Z}" />
+							<MathRender size="math-size" src="\mathbb{Z}" />
 						</td>
 					</tr>
 					<tr>
@@ -35,28 +35,28 @@
 							Il peut s'écrire sous forme décimale comprenant une partie entière, une virgule et une partie décimale
 							finie.</td>
 						<td>
-							<MathRender src="\mathbb{D}" />
+							<MathRender size="math-size" src="\mathbb{D}" />
 						</td>
 					</tr>
 					<tr>
 						<td>Rationels</td>
 						<td>Nombre pouvant s'écrire comme le quotient de deux entiers relatifs.</td>
 						<td>
-							<MathRender src="\mathbb{Q}" />
+							<MathRender size="math-size" src="\mathbb{Q}" />
 						</td>
 					</tr>
 					<tr>
 						<td>Réels</td>
 						<td>Nombres représentés par une partie entière et une partie décimale finie ou infinie.</td>
 						<td>
-							<MathRender src="\mathbb{R}" />
+							<MathRender size="math-size" src="\mathbb{R}" />
 						</td>
 					</tr>
 					<tr>
 						<td>Complexes</td>
 						<td>Nombres représentés par une partie entière et une partie réelle et une partie immaginaire.</td>
 						<td>
-							<MathRender src="\mathbb{C}" />
+							<MathRender size="math-size" src="\mathbb{C}" />
 						</td>
 					</tr>
 				</tbody>
@@ -66,7 +66,7 @@
 				<MathRender src="\mathbb{Z}" />).
 			</p>
 			<p> Les ensembles sont construits les uns par dessus les autres. <br> Ainsi les ensembles se notent ainsi :
-				<MathRender
+				<MathRender size="math-size"
 					src="\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{D} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}" />
 			</p>
 		</div>

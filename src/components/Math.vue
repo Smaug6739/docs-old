@@ -1,16 +1,21 @@
 <template>
-  <span v-html="mathRender" class="math"></span>
+  <span v-html="mathRender" :class="size" class="m"></span>
+
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import katex from "katex";
 export default defineComponent({
-  name: "Math",
+  name: "MathRender",
   components: {},
   props: {
     src: {
       type: String,
       required: true,
+    },
+    size: {
+      type: String,
+      default: "normal",
     },
   },
   computed: {
@@ -22,10 +27,32 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss" scoped>
-@import "https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css";
+<style lang="scss">
+@import url("/katex/katex.css");
 
-.math {
+.normal {
+  font-size: var(--font-size);
+}
+
+.math-size {
   font-size: var(--math-size);
+}
+
+.katex-display {
+  overflow: auto hidden
+}
+
+.katex-display>.katex {
+  white-space: normal
+}
+
+/* Add space between broken lines: */
+.katex-display>.base {
+  margin: 0.25em 0
+}
+
+/* Compensate by reducing space around display math */
+.katex-display {
+  margin: 0.5em 0;
 }
 </style>
