@@ -1,6 +1,7 @@
 <template>
 	<main>
-		<h2 id="symboles-g-n-raux">Symboles généraux</h2>
+		<h1 id="symboles-g-n-raux">Symboles généraux</h1>
+		<p>Voici une liste des symboles généraux utilisés dans des expressions mathématiques.</p>
 		<div class="overflow">
 			<table>
 				<thead>
