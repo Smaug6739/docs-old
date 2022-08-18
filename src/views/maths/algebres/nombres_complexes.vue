@@ -3,7 +3,6 @@
 <template>
   <main>
     <h1>Nombres complexes</h1>
-    <hr>
     <h2>I Théorème</h2>
     <ul>
       <li>On admet l'existance d'un ensemble de nombres appelé <strong>nombres complexes</strong> :

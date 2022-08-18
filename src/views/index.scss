@@ -56,6 +56,11 @@
 		text-decoration: none;
 	}
 
+	h1,
+	h2 {
+		border-bottom: 1px solid $grey;
+	}
+
 	h1 tt,
 	h1 code {
 		font-size: inherit;
