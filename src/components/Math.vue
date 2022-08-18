@@ -22,6 +22,9 @@ export default defineComponent({
     mathRender(): string {
       return katex.renderToString(this.src, {
         throwOnError: false,
+        displayMode: true,
+        leqno: true,
+
       });
     },
   },
@@ -31,28 +34,25 @@ export default defineComponent({
 @import url("/katex/katex.css");
 
 .normal {
-  font-size: var(--font-size);
+  font-size: 14px;
 }
 
 .math-size {
   font-size: var(--math-size);
 }
 
+.katex-display,
+.katex-display>.katex,
+.katex-display>.katex>.katex-html {
+  display: inline !important;
+  // make it inline, so it can render with your text even after `displayMode:true`
+}
+
 .katex-display {
-  overflow: auto hidden
+  text-align: left !important;
 }
 
 .katex-display>.katex {
-  white-space: normal
-}
-
-/* Add space between broken lines: */
-.katex-display>.base {
-  margin: 0.25em 0
-}
-
-/* Compensate by reducing space around display math */
-.katex-display {
-  margin: 0.5em 0;
+  text-align: left !important;
 }
 </style>
