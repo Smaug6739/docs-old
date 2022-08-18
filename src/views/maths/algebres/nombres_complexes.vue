@@ -3,7 +3,7 @@
 <template>
   <main>
     <h1>Nombres complexes</h1>
-    <h2>I Théorème</h2>
+    <p>I Théorème</p>
     <ul>
       <li>On admet l'existance d'un ensemble de nombres appelé <strong>nombres complexes</strong> :
         <kt src="\mathbb{C}" />, contenant
