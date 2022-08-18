@@ -57,11 +57,10 @@ export default defineComponent({
 
 
 .container {
-  display: inline-block;
-  vertical-align: text-top !important;
-  max-width: 100% !important;
+  display: inline-flex;
+  vertical-align: top;
+  max-width: 100%;
   overflow-y: hidden;
-  overflow-x: scroll !important;
-  padding-right: 2px;
+  overflow-x: auto;
 }
 </style>

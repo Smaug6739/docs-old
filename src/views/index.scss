@@ -102,7 +102,6 @@
 	h5,
 	h6 {
 		font-weight: 600;
-		margin-bottom: 16px;
 		padding-bottom: 7.2px;
 		line-height: 1.25;
 	}
@@ -137,10 +136,14 @@
 	ul,
 	ol,
 	dl,
-	li,
 	table,
 	pre {
 		margin: 15px 0;
+	}
+
+	li {
+		margin: 15px 0;
+
 	}
 
 	hr {
@@ -397,96 +400,96 @@
 		background-color: transparent;
 		border: none;
 	}
-}
 
 
-// TABLES
 
-/*//////////////////////////////////////////////////////////////////
+	// TABLES
+
+	/*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 
-@font-face {
-	font-family: Poppins-Regular;
-	src: url('../fonts/poppins/Poppins-Regular.ttf');
-}
+	@font-face {
+		font-family: Poppins-Regular;
+		src: url('../fonts/poppins/Poppins-Regular.ttf');
+	}
 
-@font-face {
-	font-family: Poppins-Bold;
-	src: url('../fonts/poppins/Poppins-Bold.ttf');
-}
+	@font-face {
+		font-family: Poppins-Bold;
+		src: url('../fonts/poppins/Poppins-Bold.ttf');
+	}
 
-/*//////////////////////////////////////////////////////////////////
+	/*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
+	* {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
 
-body,
-html {
-	height: 100%;
-	font-family: sans-serif;
-}
+	body,
+	html {
+		height: 100%;
+		font-family: sans-serif;
+	}
 
-/* ------------------------------------ */
-a {
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-}
+	/* ------------------------------------ */
+	a {
+		margin: 0px;
+		transition: all 0.4s;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+	}
 
-a:focus {
-	outline: none !important;
-}
+	a:focus {
+		outline: none !important;
+	}
 
-a:hover {
-	text-decoration: none;
-}
+	a:hover {
+		text-decoration: none;
+	}
 
-/* ------------------------------------ */
+	/* ------------------------------------ */
 
-p {
-	margin: 0px;
-}
+	p {
+		margin: 0px;
+	}
 
-/* ------------------------------------ */
-input {
-	display: block;
-	outline: none;
-	border: none !important;
-}
+	/* ------------------------------------ */
+	input {
+		display: block;
+		outline: none;
+		border: none !important;
+	}
 
-textarea {
-	display: block;
-	outline: none;
-}
+	textarea {
+		display: block;
+		outline: none;
+	}
 
-textarea:focus,
-input:focus {
-	border-color: transparent !important;
-}
+	textarea:focus,
+	input:focus {
+		border-color: transparent !important;
+	}
 
-/* ------------------------------------ */
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
+	/* ------------------------------------ */
+	button {
+		outline: none !important;
+		border: none;
+		background: transparent;
+	}
 
-button:hover {
-	cursor: pointer;
-}
+	button:hover {
+		cursor: pointer;
+	}
 
-iframe {
-	border: none !important;
-}
+	iframe {
+		border: none !important;
+	}
 
-// TABLE START
-/*
+	// TABLE START
+	/*
 table {
 	border: 1px solid var(--contrast-color-after);
 	border-collapse: collapse;
@@ -568,42 +571,44 @@ table th {
 		border-bottom: 0;
 	}
 }*/
-table {
-	border-collapse: collapse;
-}
-
-@media screen and (max-width: 768px) {
 	table {
-		zoom: 0.9;
+		border-collapse: collapse;
 	}
-}
 
-td,
-th {
-	border: 1px solid var(--opposite-color);
-	padding: 8px;
-}
+	@media screen and (max-width: 768px) {
+		table {
+			zoom: 0.9;
+		}
+	}
 
-tr {
-	background-color: var(--contrast-color);
-}
+	td,
+	th {
+		border: 1px solid var(--opposite-color);
+		padding: 8px;
+	}
 
-tr:nth-child(even) {
-	background-color: var(--contrast-color-after);
-}
+	tr {
+		background-color: var(--contrast-color);
+	}
 
-/*tr:hover {
+	tr:nth-child(even) {
+		background-color: var(--contrast-color-after);
+	}
+
+	/*tr:hover {
 	background-color: var(--contrast-color);
 }*/
 
-th {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	text-align: left;
-	background-color: var(--contrast-color-after);
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: var(--contrast-color-after);
+	}
+
+	// TABLE END
+
+
+	// CUSTOM RULES
+
 }
-
-// TABLE END
-
-
-// CUSTOM RULES
