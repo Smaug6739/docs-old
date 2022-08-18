@@ -62,5 +62,6 @@ export default defineComponent({
   max-width: 100%;
   overflow-y: hidden;
   overflow-x: auto;
+  padding-right: 2px;
 }
 </style>

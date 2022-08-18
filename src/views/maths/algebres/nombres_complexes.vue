@@ -163,7 +163,41 @@
       </Info>
     </p>
     <p><strong>Plan complexe:</strong></p>
-    <img style="max-width:400px" src="/ressources/math/algebres/complex/nombres-complexes-plan.png" alt="Plan complexe">
+    <p>
+      <img style="max-width:400px" src="/ressources/math/algebres/complex/nombres-complexes-plan.png"
+        alt="Plan complexe">
+    </p>
+    <p>
+      <Info name="Définitions" color="red">Soit
+        <kt src="z = a +ib" /> un nombre complexe. <br />
+        On appelle <strong>vecteur image</strong> de
+        <kt src="z" /> le vecteur
+        <kt src="\overrightarrow{u}" /> de coordonnées
+        <kt src="(a,b)" />. <br />
+        On dit que
+        <kt src="z = a +ib" /> est <strong>l'affixe</strong> du vecteur
+        <kt src="\overrightarrow{u}(a; b)" />. <br />
+      </Info>
+      <Info name="Propriétés:">
+        Si A est un point d'affixe
+        <kt src="z_a" /> et B un point d'affixe
+        <kt src="z_b" />, alors :
+        <ul>
+          <li>Le vecteur
+            <kt src="\overrightarrow{u}(a; b)" /> a pour affixe
+            <kt src="z_{\overrightarrow{AB}} = z_B-z_A" />.
+          </li>
+          <li>
+            Le milieu
+            <kt src="I" />
+            de
+            <kt src="AB" />
+            a pour affixe :
+            <kt src="z_1 = \frac{z_A+z_B}{2}" />.
+          </li>
+        </ul>
+      </Info>
+    </p>
   </main>
 </template>
 
@@ -179,7 +213,7 @@ export default defineComponent({
   components: {
     kt,
     Warning,
-    Info
+    Info,
   },
 });
 </script>
