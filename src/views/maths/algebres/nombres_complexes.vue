@@ -136,6 +136,35 @@
       un nombre réel (
       <kt src="\mathbb{R}" />).
     </p>
+    <p>
+      Exemples: <br />
+    <ul>
+      <li>
+        <kt
+          src="\frac{1}{z_1} = \frac{1 (1+2i)}{1-2i(1+2i)} = \frac{1+2i}{1^2+(-2)^2} = \frac{1+2i}{5} = \frac{1}{5} + \frac{2i}{5}" />
+      </li>
+      <li>
+        <kt
+          src="\frac{z_1}{z_2} = \frac{1-2i}{3+i} = \frac{1-2i(3-i)}{3+i(3+i)} = \frac{3-i-6i+2i^2}{3^2+1^2} = \frac{1-7i}{10} = \frac{1}{10} - \frac{7i}{10}" />
+      </li>
+    </ul>
+    </p>
+    <h2>III Représentation géométrique d'un nombre complexe</h2>
+    <p>
+      <Info name="Définitions:" color="red">
+        Dans un plan muni d'un repère orthonormé direct
+        <kt src="(O; \vec{u}; \vec{v})" />, à tout nombre complexe
+        <kt src="z = a + ib" />, on associe comme <strong>image</strong> le point M de coordonnées (a,b). <br />
+        On dit que
+        <kt src="z" /> est <strong>l'affixe</strong> du point M et on le note
+        <kt src="M(z)" />. <br />
+        Ce plan est appelé <strong>le plan complexe</strong>. <br />
+        L'axe des abscisses est appelé <strong>axe réel</strong>. <br />
+        L'axe des ordonnées est appelé <strong>axe imaginaire</strong>. <br />
+      </Info>
+    </p>
+    <p><strong>Plan complexe:</strong></p>
+    <!--<img style="max-width:400px" src="/ressources/math/algebres/complex/nombres-complexes-plan.png" alt="Plan complexe">-->
   </main>
 </template>
 
@@ -155,3 +184,5 @@ export default defineComponent({
   },
 });
 </script>
+<style>
+</style>

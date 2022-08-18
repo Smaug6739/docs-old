@@ -1,6 +1,6 @@
-<template>
-  <span v-html="mathRender" :class="size" class="m"></span>
-
+<template >
+  <span class="container">
+    <i v-html="mathRender"></i></span>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -45,7 +45,6 @@ export default defineComponent({
 .katex-display>.katex,
 .katex-display>.katex>.katex-html {
   display: inline !important;
-  // make it inline, so it can render with your text even after `displayMode:true`
 }
 
 .katex-display {
@@ -54,5 +53,18 @@ export default defineComponent({
 
 .katex-display>.katex {
   text-align: left !important;
+}
+
+
+.container {
+  vertical-align: text-top !important;
+  max-width: 100% !important;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+}
+
+.container {
+  display: inline-block;
+  overflow-wrap: break-word;
 }
 </style>

@@ -28,5 +28,6 @@ export default defineComponent({
   height: 100vh;
   width: 100%;
   color: var(--font-color);
+  max-width: 100% !important;
 }
 </style>

@@ -1,6 +1,10 @@
+/* Add space between broken lines: */
+
+
+/* Compensate by reducing space around display math */
 .view {
-	width: 90%;
-	max-width: 1000px;
+	width: 60%;
+	max-width: 100%;
 	margin: auto;
 	padding: 10px;
 
