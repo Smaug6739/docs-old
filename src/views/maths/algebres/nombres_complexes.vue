@@ -155,16 +155,16 @@
         Dans un plan muni d'un repère orthonormé direct
         <kt src="(O; \vec{u}; \vec{v})" />, à tout nombre complexe
         <kt src="z = a + ib" />, on associe comme <strong>image</strong> le point M de coordonnées (a,b). <br />
-        On dit que
+        - On dit que
         <kt src="z" /> est <strong>l'affixe</strong> du point M et on le note
         <kt src="M(z)" />. <br />
-        Ce plan est appelé <strong>le plan complexe</strong>. <br />
-        L'axe des abscisses est appelé <strong>axe réel</strong>. <br />
-        L'axe des ordonnées est appelé <strong>axe imaginaire</strong>. <br />
+        - Ce plan est appelé <strong>le plan complexe</strong>. <br />
+        - L'axe des abscisses est appelé <strong>axe réel</strong>. <br />
+        - L'axe des ordonnées est appelé <strong>axe imaginaire</strong>. <br />
       </Info>
     </p>
     <p><strong>Plan complexe:</strong></p>
-    <!--<img style="max-width:400px" src="/ressources/math/algebres/complex/nombres-complexes-plan.png" alt="Plan complexe">-->
+    <img style="max-width:400px" src="/ressources/math/algebres/complex/nombres-complexes-plan.png" alt="Plan complexe">
   </main>
 </template>
 
@@ -184,5 +184,3 @@ export default defineComponent({
   },
 });
 </script>
-<style>
-</style>
