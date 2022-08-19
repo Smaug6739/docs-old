@@ -272,7 +272,7 @@
         Si un nombre complexe non nul z, a pour module
         <kt src="r = |z|" /> et pour argument
         <kt src="\theta = arg(z)" />, alors:<br />
-        <kt src="z = r[cos(\theta) + i sin(\theta)]" /> => On appelle cette écriture <strong>forme
+        <kt src="z = r[\cos(\theta) + i \sin(\theta)]" /> => On appelle cette écriture <strong>forme
           trigonométrique</strong> de z.
       </Info>
     </p>
@@ -286,10 +286,10 @@
         <kt src="r = |z| = \sqrt{a^2+b^2}" />
       </li>
       <li>
-        <kt src="cos(\theta) = \frac{a}{r}" />
+        <kt src="\cos(\theta) = \frac{a}{r}" />
       </li>
       <li>
-        <kt src="sin(\theta) = \frac{b}{r}" />
+        <kt src="\sin(\theta) = \frac{b}{r}" />
       </li>
     </ul>
     </p>
@@ -302,23 +302,23 @@
       On recherche
       <kt src="r" /> et
       <kt src="o" /> tel que
-      <kt src="z = r(cos \theta + i sin \theta)" /><br />
+      <kt src="z = r(\cos \theta + i sin \theta)" /><br />
       <kt src="r = |z| = \sqrt{1^2+(\sqrt{3})^2} = \sqrt{4} = 2" /><br />
       L'angle
       <kt src="\theta" /> vérifie
-      <kt src="cos(\theta) = \frac{1}{2}" /> et
-      <kt src="sin(\theta) = \frac{\sqrt{3}}{2}" /><br />
+      <kt src="\cos(\theta) = \frac{1}{2}" /> et
+      <kt src="\sin(\theta) = \frac{\sqrt{3}}{2}" /><br />
       Le cercle trigonométrique permet d'obtenir
       <kt src="\theta = \frac{\pi}{3}" /><br />
       Ainsi:
-      <kt src="z = 2\Big(cos(\frac{\pi}{3}) + i sin(\frac{\pi}{3})\Big)" />
+      <kt src="z = 2\Big(\cos(\frac{\pi}{3}) + i \sin(\frac{\pi}{3})\Big)" />
     </p>
     <p>
       <span class="m-b">2) Donner la forme algébrique du nombre de module 4 et d'argument
         <kt src="-\frac{\pi}{6}" />.
       </span> <br />
       Par définition
-      <kt src="z' = 4\Big(cos(-\frac{\pi}{6}) + i sin(-\frac{\pi}{6})\Big)" /> <br />
+      <kt src="z' = 4\Big(\cos(-\frac{\pi}{6}) + i \sin(-\frac{\pi}{6})\Big)" /> <br />
       <kt src="z' = 4\bigg(\frac{\sqrt{3}}{2} + i \Big(-\frac{1}{2}\Big)\bigg) = 2\sqrt{3} - 2i" />
     </p>
   </main>

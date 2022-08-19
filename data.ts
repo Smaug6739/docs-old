@@ -71,7 +71,12 @@ const config: Subject[] = [
             {
                 name: "Géométrie",
                 icon: "bxs-shapes",
-                chapters: [],
+                chapters: [
+                    {
+                        name: "Produit scalaire",
+                        path: "maths/geometrie/produit_scalaire",
+                    },
+                ],
             },
             {
                 name: "Probabilités et statistiques",

@@ -11,7 +11,8 @@ export default defineComponent({
   props: {
     src: {
       type: String,
-      required: true,
+      required: false,
+      default: "",
     },
     size: {
       type: String,
@@ -20,7 +21,12 @@ export default defineComponent({
   },
   computed: {
     mathRender(): string {
-      return katex.renderToString(this.src, {
+      let src = this.src
+      this.$slots.default ? console.log(this.$slots.default()[0].children) : "";
+      if (this.$slots.default) {
+        src = this.$slots.default()[0].children as string
+      }
+      return katex.renderToString(src, {
         throwOnError: false,
         displayMode: true,
         leqno: true,
