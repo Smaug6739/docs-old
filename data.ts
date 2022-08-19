@@ -39,6 +39,10 @@ const config: Subject[] = [
                         path: "maths/numbers/sets",
                     },
                     {
+                        name: "Fractions",
+                        path: "maths/numbers/fractions",
+                    },
+                    {
                         name: "Intervalles",
                         path: "maths/numbers/intervals",
                     },

@@ -24,7 +24,7 @@ export default defineComponent({
         throwOnError: false,
         displayMode: true,
         leqno: true,
-
+        trust: true,
       });
     },
   },
