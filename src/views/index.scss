@@ -616,6 +616,12 @@ table th {
 	// CUSTOM RULES
 	img {
 		margin-bottom: 5px;
+		max-width: 75%;
+	}
+	@media screen and (max-width: 600px) {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.m-b {

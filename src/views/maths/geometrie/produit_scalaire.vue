@@ -32,6 +32,29 @@
 				On appelle <strong>projeté orthogonal d'un vecteur <kt src="\vec{u}"/></strong> représenté par représenté par <kt src="\overrightarrow{MN}" /> sur un axe <kt src="\Delta" /> le vecteur <kt src="\vec{u'}" /> représenté par <kt src="\overrightarrow{M'N'}" /> où M' et N' sont les projetés orthogonaux de M et N sur <kt src="\Delta" />.
 			</Info>
 		</p>
+		<p>
+			<Info name="Théorème" color="turquoise">
+				Soit <kt src="\vec{u}"/> un vecteur non nul et deux points A et B tels que <kt src="\vec{u} = \overrightarrow{AB}"/> <br/>
+				Alors pour tout vecteur <kt src="\vec{v}"/>, en notant <kt src="\vec{v'}"/> le projeté orthogonal de <kt src="\vec{v}"/> sur la droite (AB) :<br/>
+				<ul>
+					<li>Si <kt src="\vec{u}"/> et <kt src="\vec{v}"/> sont dans le même sens : <kt src="\lVert\vec{u}\rVert \times \lVert\vec{v'}\rVert"/> </li>
+					<li>Si <kt src="\vec{u}"/> et <kt src="\vec{v}"/> ne sont pas dans le même sens : <kt src="-\lVert\vec{u}\rVert \times \lVert\vec{v'}\rVert"/> </li>
+				</ul>
+			</Info>
+			<img  src="/ressources/math/geometrie/produit_scalaire/projeté.png" alt="Projeté">
+			<ul>
+				<li>Cas 1 : <kt src="\overrightarrow{AB}\cdot\overrightarrow{AC} = \overrightarrow{AB} \cdot \overrightarrow{AC'} = AB \times AC'"/></li>
+				<li>Cas 2 : <kt src="\overrightarrow{AB}\cdot\overrightarrow{AC} = \overrightarrow{AB} \cdot \overrightarrow{AC'} = - AB \times AC'"/></li>
+			</ul>
+		</p>
+		<p>
+			<Info name="Décomposition d'un vecteur selon deux axes orthogonaux">
+				Soit <kt src="(O; \vec{i} \vec{j})"/> un repère orthonormé et <kt src="\vec{u}" /> un vecteur non nul tel que <kt src="(\vec{i}; \vec{u}) = \theta"/>. <br/>
+				Alors le vecteur <kt src="\vec{u}"/> se décompose de manière unique sous la forme <kt src="\vec{u} = \vec{u_x} \times \vec{u_y}"/> où <kt src="\vec{u_x}"/> et <kt src="\vec{u_y}"/> sont les projetés respectifs du vecteur <kt src="\vec{u}"/> sur l'axe des abscisses (<kt src="\vec{i}"/>) et l'axe des ordonnées (<kt src="\vec{j}"/>). <br/>
+				De plus, on a : <kt src="\vec{u_x} = \lVert\vec{u}\rVert \times \cos{\theta}"/> et <kt src="\vec{u_y} = \lVert\vec{u}\rVert \times \sin{\theta}"/>.
+			</Info>
+			<img src="/ressources/math/geometrie/produit_scalaire/décomposition.png" alt="Décomposition vectorielle">
+		</p>
 	</main>
 </template>
 <script lang="ts">

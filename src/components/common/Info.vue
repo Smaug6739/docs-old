@@ -44,6 +44,17 @@ svg {
 		color: #ff4d4d;
 	}
 }
+
+.turquoise {
+	svg {
+		fill: #00b5ad;
+		color: #00b5ad;
+	}
+
+	.name {
+		color: #00b5ad;
+	}
+}
 </style>
 
 <script lang="ts">
