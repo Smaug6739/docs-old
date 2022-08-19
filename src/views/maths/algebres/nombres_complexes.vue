@@ -55,6 +55,21 @@
         <kt src="Re(\bar{z}) = Re(z)" /> et
         <kt src="Im(\bar{z}) = -Im(z)" />.
       </Info>
+      <Info name="Propriétés">
+        <ul>
+          <li>
+            Pour tout nombres complexes z et z' on a :
+            <kt src="\overline{z+z'} = \bar{z}+\bar{z'}" />;&nbsp;&nbsp;&nbsp;&nbsp;
+            <kt src="\overline{z\times z'} = \bar{z}\times\bar{z'}" />;&nbsp;&nbsp;&nbsp;&nbsp;
+            <kt src="\bar{\bar{z}} = z" />;
+          </li>
+          <li>
+            Pour tout nombres complexes z et z' non nuls on a:
+            <kt src="\overline{\Big(\frac{1}{z}\Big)} = \frac{1}{z}" />;&nbsp;&nbsp;&nbsp;&nbsp;
+            <kt src="\overline{\Big(\frac{z}{z'}\Big)} = \frac{\bar{z}}{\bar{z'}}" />;&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+        </ul>
+      </Info>
     </p>
     <h4>Exemples:</h4>
     <ul>
@@ -93,6 +108,18 @@
         <kt src="|z_4| = |2i| = \sqrt{2^2} = \sqrt{4} = 2" />
       </li>
     </ul>
+    <Info name="Propriétés">
+      z et z' sont deux nombres complexes avec z' non nul.
+      <ul>
+        <li>Module d'un produit:
+          <kt src="|z \times z'| = |z| \times |z'|" />
+        </li>
+        <li>
+          Module d'un quotient:
+          <kt src="\Big|\frac{z}{z'}\Big| = \frac{|z|}{|z'|}" />
+        </li>
+      </ul>
+    </Info>
     <h3>Opérations sur des nombres complexes</h3>
     <h4>L'addition et la soustraction</h4>
     <p>
@@ -149,6 +176,7 @@
     </ul>
     </p>
     <h2>III Représentation géométrique d'un nombre complexe</h2>
+    <h3>1) Affixe d'un point, d'un vecteur</h3>
     <p>
       <Info name="Définitions:" color="red">
         Dans un plan muni d'un repère orthonormé direct
@@ -178,6 +206,11 @@
         <kt src="z = a +ib" /> est <strong>l'affixe</strong> du vecteur
         <kt src="\overrightarrow{u}(a; b)" />. <br />
       </Info>
+    </p>
+    <p>
+      <img style="max-width:400px" src="/ressources/math/algebres/complex/vecteur-image.png" alt="Plan complexe">
+    </p>
+    <p>
       <Info name="Propriétés:">
         Si A est un point d'affixe
         <kt src="z_a" /> et B un point d'affixe
@@ -197,6 +230,96 @@
           </li>
         </ul>
       </Info>
+    </p>
+    <h3>2) Interprétation du conjugué, du module</h3>
+    <p>
+      <Info name="Propriétés:">
+        Soit M le point d'affixe
+        <kt src="z=a+ib" />.
+        <ul>
+          <li>
+            <kt src="OM = |z| = \sqrt{a^2+b^2}" /> (le module de z est la longueur du vecteur image de z).
+          </li>
+          <li>
+            Le point M' d'affixe
+            <kt src="z' = \bar{z}" /> est le symétrique de M par rapport à l'axe des abscisses.
+          </li>
+          <!--TODO: Image explicative-->
+        </ul>
+      </Info>
+    </p>
+    <h2>IV Forme trigonométrique</h2>
+    <h3>Argument d'un nombre complexe</h3>
+    <p>
+      <Info name="Définition" color="red">
+        Soit z un nombre complexe non nul et M son image dans le plan complexe.
+        On appelle <strong>argument</strong> de z, et on note <strong>arg(z)</strong> toute mesure en radians de l'angle
+        <kt src="\theta" /> défini par
+        <kt src="(\overrightarrow{u}, \overrightarrow{OM})" />
+      </Info>
+    </p>
+    <p>
+      <strong>Remarque:</strong> Un nombre complexe non nul a une infinité d'arguments de la forme
+      <kt src="\theta +2k \pi" /> (avec
+      <kt src="k \in \mathbb{Z}" />).
+    </p>
+    <p>
+      <img style="max-width:400px" src="/ressources/math/algebres/complex/arg-complex.png" alt="Argument complexe">
+    </p>
+    <h3>Forme trigonométrique d'un nombre complexe</h3>
+    <p>
+      <Info name="Définition et propriété" color="red">
+        Si un nombre complexe non nul z, a pour module
+        <kt src="r = |z|" /> et pour argument
+        <kt src="\theta = arg(z)" />, alors:<br />
+        <kt src="z = r[cos(\theta) + i sin(\theta)]" /> => On appelle cette écriture <strong>forme
+          trigonométrique</strong> de z.
+      </Info>
+    </p>
+    <br>
+    <p>
+      <i style="text-decoration: underline;">Méthode:</i>
+      Pour déterminer r et k
+      <kt src="\theta" />, on utilise les relations suivantes :
+    <ul>
+      <li>
+        <kt src="r = |z| = \sqrt{a^2+b^2}" />
+      </li>
+      <li>
+        <kt src="cos(\theta) = \frac{a}{r}" />
+      </li>
+      <li>
+        <kt src="sin(\theta) = \frac{b}{r}" />
+      </li>
+    </ul>
+    </p>
+    <h4>Exemples</h4>
+    <p>
+      <span class="m-b">1) Donner la forme trigonométrique du nombre
+        <kt src="z = 1 + i\sqrt{3}" />.
+      </span>
+      <br />
+      On recherche
+      <kt src="r" /> et
+      <kt src="o" /> tel que
+      <kt src="z = r(cos \theta + i sin \theta)" /><br />
+      <kt src="r = |z| = \sqrt{1^2+(\sqrt{3})^2} = \sqrt{4} = 2" /><br />
+      L'angle
+      <kt src="\theta" /> vérifie
+      <kt src="cos(\theta) = \frac{1}{2}" /> et
+      <kt src="sin(\theta) = \frac{\sqrt{3}}{2}" /><br />
+      Le cercle trigonométrique permet d'obtenir
+      <kt src="\theta = \frac{\pi}{3}" /><br />
+      Ainsi:
+      <kt src="z = 2\Big(cos(\frac{\pi}{3}) + i sin(\frac{\pi}{3})\Big)" />
+    </p>
+    <p>
+      <span class="m-b">2) Donner la forme algébrique du nombre de module 4 et d'argument
+        <kt src="-\frac{\pi}{6}" />.
+      </span> <br />
+      Par définition
+      <kt src="z' = 4\Big(cos(-\frac{\pi}{6}) + i sin(-\frac{\pi}{6})\Big)" /> <br />
+      <kt src="z' = 4\bigg(\frac{\sqrt{3}}{2} + i \Big(-\frac{1}{2}\Big)\bigg) = 2\sqrt{3} - 2i" />
     </p>
   </main>
 </template>
