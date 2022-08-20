@@ -55,6 +55,12 @@
 			</Info>
 			<img src="/ressources/math/geometrie/produit_scalaire/décomposition.png" alt="Décomposition vectorielle">
 		</p>
+		<h2>Expression analytique du produit scalaire</h2>
+		<p>
+			<Info name="Propriété:">
+				Soit <kt src="\vec{u}\begin{pmatrix} x \\ y \end{pmatrix} et \vec{v}\begin{pmatrix} x' \\ y' \end{pmatrix}"/> deux vecteurs dans le repère, alors on a: <kt src="\vec{u} \cdot \vec{v} = xx' + yy'"/>
+			</Info>
+			</p>
 	</main>
 </template>
 <script lang="ts">
